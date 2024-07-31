@@ -1,0 +1,173 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Not A Boring Survey Form</h1>
+    <p id="description">Thank you for taking the time to check this project of mine.</p>
+    <form id="survey-form">
+      <fieldset>
+      
+        <label for="Name" id="name-label">1) Enter Your name: <input id="name" type="text" required placeholder="Type your name"></input></label>
+        <label for="email" id="email-label">2) Enter Your email: <input id="email" type="email" required placeholder="Type your email"></input></label>
+        <label for="number" id="number-label">3) Enter Your number: <input id="number" type="number" required min="11" max="14" placeholder="Type your number"></input></label>
+        <label id="toothpastemenu">
+        4) What is your toothpaste like? </label><select id="dropdown">
+        
+          <option value="1">(Select one)</option>
+          <option value="2">Toothpaste with salt</option>
+          <option value="3">Toothpaste without salt</option>
+        </select>
+        </label>
+        <label id="procrastinator1">5) Are you a professional procrastinator or a casual?</label>
+          <input type=radio name="choice" value="Procrastinating"></input> Procrastinating with effort.
+        </label>
+        <label>
+          <input type=radio name="choice" value="Procrastinating with stress"></input> Procrastinating with ease.
+        </label>
+        <label id="procrastinator2">
+          6) What are you doing now?
+        </label>
+
+        <label>
+          <input type="checkbox" value="checkbox value 1"> procrastinating with stress.
+        </label>
+
+        <label>
+          <input type="checkbox" value="checkbox value 2"> procrastinating with more stress now.
+        </label>
+
+        <label id="personalfeedback">Well you must have judged this form conciously or subconciously by now. Tell me your thoughts. I am not interested and I won't read your text anyway.</label>
+
+        <textarea placeholder="Type something already"></textarea>
+
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+
+** end of undefined **
+
+** start of undefined **
+
+h1 {
+    margin: 1em auto;
+    text-align: center;
+    background-color: #657a00; 
+    padding: 0.5em; 
+    border-radius: 20px;
+    color: white;
+    border: 2px solid black;
+    width: fit-content;
+  
+}
+
+p { margin: 1em auto;
+    text-align: center;
+    background-color: #657a00; 
+    padding: 0.5em; 
+    border-radius: 7px;
+    color: white;
+    border: 2px solid black;
+    width: fit-content;
+    font-size:20px;
+
+}
+body {
+  background-color:#1400c6;
+  font-family:Trebuchet MS;
+  font-size:16px;
+  
+  
+}
+
+form{
+  background-color:#beef00;
+  padding: 1.15em;
+  border-radius:40px;
+  width: 100vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  
+}
+
+label, fieldset {
+  display: block;
+  margin: 1.5rem 0;
+  text-align: left;
+  
+
+}
+
+.submit{
+  display:block;
+  
+}
+
+#personalfeedback {
+    font-family: 'Courier New', cursive;
+    font-weight: bold;
+    font-size:18px;
+    text-align:center;
+}
+
+textarea,
+select {
+  margin: 7px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+textarea{
+  min-height: 5em;
+  border-radius:7px;
+}
+
+#submit {
+    display: block;
+    margin: 1.5rem auto; /* Center the submit button */
+    background-color: #ff0028; /* Background color for better visibility */
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#submit:hover {
+    background-color: #ff8928;
+}
+
+#name, #email {
+  width: 67%;
+  
+}
+
+#number {
+  width:63%
+}
+
+fieldset:last-of-type {
+  border:none;
+}
+
+#name-label, #email-label, #number-label, #toothpastemenu, #procrastinator1, #procrastinator2{
+  font-weight:bold;
+  
+}
+
+#toothpastemenu {
+  margin:0;
+}
+
+
+** end of undefined **
+

@@ -1,0 +1,111 @@
+h1 {
+    margin: 1em auto;
+    text-align: center;
+    background-color: #657a00; 
+    padding: 0.5em; 
+    border-radius: 20px;
+    color: white;
+    border: 2px solid black;
+    width: fit-content;
+  
+}
+
+p { margin: 1em auto;
+    text-align: center;
+    background-color: #657a00; 
+    padding: 0.5em; 
+    border-radius: 7px;
+    color: white;
+    border: 2px solid black;
+    width: fit-content;
+    font-size:20px;
+
+}
+body {
+  background-color:#1400c6;
+  font-family:Trebuchet MS;
+  font-size:16px;
+  
+  
+}
+
+form{
+  background-color:#beef00;
+  padding: 1.15em;
+  border-radius:40px;
+  width: 100vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  
+}
+
+label, fieldset {
+  display: block;
+  margin: 1.5rem 0;
+  text-align: left;
+  
+
+}
+
+.submit{
+  display:block;
+  
+}
+
+#personalfeedback {
+    font-family: 'Courier New', cursive;
+    font-weight: bold;
+    font-size:18px;
+    text-align:center;
+}
+
+textarea,
+select {
+  margin: 7px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+textarea{
+  min-height: 5em;
+  border-radius:7px;
+}
+
+#submit {
+    display: block;
+    margin: 1.5rem auto; /* Center the submit button */
+    background-color: #ff0028; /* Background color for better visibility */
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#submit:hover {
+    background-color: #ff8928;
+}
+
+#name, #email {
+  width: 60%;
+  
+}
+
+#number {
+  width:56.5%
+}
+
+fieldset:last-of-type {
+  border:none;
+}
+
+#name-label, #email-label, #number-label, #toothpastemenu, #procrastinator1, #procrastinator2{
+  font-weight:bold;
+  
+}
+
+#toothpastemenu {
+  margin:0;
+}
