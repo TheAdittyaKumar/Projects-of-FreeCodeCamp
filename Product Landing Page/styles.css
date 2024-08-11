@@ -1,0 +1,260 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #F5F5F7; /* Light gray, Apple-like background */
+    color: #333333; /* Dark gray text for readability */
+    line-height: 1.6;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #002147; /* Deep Blue */
+    color: #FFD700; /* Gold */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    padding-top: 120px; /* Adjusted padding to fit the navbar height */
+  }
+  
+  #header-img {
+    max-width: 100%; /* Image now scales with the width of its container */
+    max-height: 315px; /* Same height as the video */
+    margin-bottom: 20px;
+    border-radius: 10px; /* Adding a slight roundness to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding a soft shadow for a premium effect */
+  }
+  
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    background-color: #002147; /* Deep Blue */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+  
+  .nav-link {
+    color: #FFD700; /* Gold */
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: 600; /* Bolder text for navigation */
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #FFC700; /* Slightly lighter gold on hover */
+  }
+  
+  /* Features Section */
+  #features-section {
+    padding: 60px 20px;
+    background-color: #FFFFFF; /* White background for contrast */
+    text-align: center;
+  }
+  
+  #features-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #002147; /* Deep Blue for a strong headline */
+  }
+  
+  #features-section p {
+    font-size: 1.2em;
+    color: #555555; /* Slightly lighter gray for the paragraph text */
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  /* Video Section */
+  #video-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #F5F5F7; /* Light gray background */
+  }
+  
+  #video-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #002147;
+  }
+  
+  #video {
+    max-width: 100%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow to lift the video frame */
+  }
+  
+  #video-section p {
+    font-size: 1.1em;
+    margin-top: 20px;
+    color: #555555;
+    max-width: 700px;
+    margin: 20px auto 0 auto;
+  }
+  
+  /* Specifications Section */
+  #specifications-section {
+    padding: 60px 20px;
+    background-color: #FFFFFF;
+  }
+  
+  #specifications-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #002147;
+    text-align: center;
+  }
+  
+  #specifications-section table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1em;
+  }
+  
+  #specifications-section th, #specifications-section td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #CCCCCC; /* Light gray borders */
+  }
+  
+  #specifications-section th {
+    color: #D32F2F; /* Premium Red for section titles */
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #F9F9F9; /* Slightly lighter background for headers */
+  }
+  
+  /* Form Section */
+  #email-section {
+    padding: 60px 20px;
+    background-color: #002147; /* Deep Blue */
+    text-align: center;
+    color: #FFD700; /* Gold */
+  }
+  
+  #email-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FFD700; /* Gold */
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #email, #submit {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    width: 300px;
+    max-width: 100%;
+    font-size: 16px;
+  }
+  
+  #email {
+    background-color: #F5F5F7;
+    color: #002147; /* Deep Blue */
+  }
+  
+  #submit {
+    background-color: #FFD700; /* Gold */
+    color: #002147; /* Deep Blue */
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #submit:hover {
+    background-color: #FFC700; /* Slightly lighter gold on hover */
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #002147; /* Deep Blue */
+    color: #FFD700; /* Gold */
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+  }
+  
+  footer h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    margin-bottom: 20px;
+    color: #F5F5F7;
+  }
+  
+  .buy-now-link {
+    background-color: #FFD700; /* Gold button */
+    color: #002147; /* Deep Blue text */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-now-link:hover {
+    background-color: #FFC700; /* Slightly lighter gold on hover */
+  }
+  /* Existing CSS Code Here... */
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 600px) {
+    #header-img {
+      max-height: 150px; /* Reduce image height for smaller screens */
+    }
+  
+    #nav-bar {
+      flex-direction: column; /* Stack navigation links vertically */
+    }
+  
+    .nav-link {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    #features-section h1, #video-section h2, #specifications-section h2, #email-section h2, footer h2 {
+      font-size: 1.5em; /* Smaller heading font size for mobile */
+    }
+  
+    #features-section p, #video-section p, #specifications-section table, footer p {
+      font-size: 1em; /* Reduce font size for better readability on smaller screens */
+    }
+  
+    #form {
+      width: 100%; /* Ensure form takes up full width */
+      padding: 0 10px; /* Add some padding for better spacing */
+    }
+  
+    #email, #submit {
+      width: 100%; /* Full width inputs on mobile */
+      font-size: 14px;
+    }
+  }
+  
