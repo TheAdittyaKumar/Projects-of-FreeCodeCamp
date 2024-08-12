@@ -1,0 +1,801 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+    --primary-color: #ff5733; /* Fiery Red-Orange */
+    --primary-color-dark: #c13b23; /* Darker Fiery Red */
+    --secondary-color: #ff8c42; /* Bright Ember Orange */
+    --text-dark: #f5f5f5; /* Light text on dark background */
+    --text-light: #ffc107; /* Soft Yellow for highlights */
+    --extra-light: #1a1a1a; /* Very dark gray, almost black */
+    --background-color: #000000; /* Pure Black */
+    --max-width: 1200px;
+
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: var(--extra-light);
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hire__me {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.hire__me:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.portfolio {
+  color: var(--primary-color);
+}
+
+.portfolio:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
+
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+}
+
+main section-2{
+    margin-top: 130px;
+}
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
+}
+.about-info{
+    text-align: center;
+}
+
+
+
+#what-i-do-description{
+    padding:30px 150px;
+}
+
+
+.skills-container{
+    display: flex;
+    gap: 24px;
+}
+.skill {
+    padding: 30px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.skill-description{
+    color: var(--Dark-03, #757575);
+}
+
+.section-title{
+    padding:0 50px 20px 50px ;
+    color: var(--Dark-01, #181818);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;}
+
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+}
+
+.skill {
+    padding: 30px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    text-align: center; /* Center the content */
+}
+
+.skill img {
+    width: 50px; /* Set the icon width */
+    height: 50px; /* Set the icon height */
+    margin-bottom: 10px; /* Add some space between the icon and the title */
+}
+
+.skill-title {
+    font-size: 1.25rem; /* Adjust the font size if needed */
+    margin-bottom: 0.5rem;
+}
+
+.skill-description {
+    color: var(--Dark-03, #757575);
+    font-size: 1rem;
+}
+.section-2 {
+    background-color: var(--background-color); /* Match the black background */
+    color: var(--text-dark); /* Use the light text on dark background */
+    padding: 3rem 1rem;
+    text-align: left;
+}
+
+.section-title {
+    color: #ff5733; /* Use the fiery red-orange for the title */
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.skill {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--extra-light); /* Dark gray background for the skill blocks */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill img {
+    width: 50px; /* Icon size */
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.skill-title {
+    color: #ffc107; /* Soft yellow for the skill titles */
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.skill-description {
+    color: white; /* Soft yellow for the description text */
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 750px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.skill-description {
+    
+    color: white;
+    font-size: 1rem; /* Slightly smaller font size */
+    line-height: 1.4rem; /* Adjusted line height for compactness */
+    text-align: left; /* Keep text aligned to the left */
+    padding: 10px; /* Compact padding */
+    background-color: transparent; /* No background color */
+    width: 100%; /* Ensure full width utilization */
+    margin: 0; /* Remove margin */
+}
+
+body {
+    background-color: #1a1a1a; /* Set the entire page background to black */
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #e0e0e0; /* Default text color */
+}
+
+.HeaderFeature {
+    padding-top: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #ff5733; /* Orange-red color */
+    background-color: #1a1a1a; /* Dark background */
+}
+
+.FeatureContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1a1a1a; /* Matching dark background */
+}
+
+.miniSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #444; /* Darker border */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #2b2b2b; /* Slightly lighter dark background */
+    border-radius: 8px;
+}
+
+.text-content {
+    max-width: 70%;
+}
+
+.miniSection h3 a {
+    color: #ffc107; /* Yellow color for the headers */
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.miniSection p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #e0e0e0; /* Light gray text */
+}
+
+.featured-image {
+    max-width: 25%;
+    min-width: 150px;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.thicker {
+    font-weight: bold;
+}
+
+.click{
+  text-align:center;
+  padding-bottom:50px;
+  
+}
+
+.TestimonialContainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #1a1a1a; /* Dark background */
+}
+
+.HeaderFeature {
+    padding-top: 10px;
+    padding-bottom: 18px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #ff5733; /* Orange-red color */
+    background-color: #1a1a1a; /* Dark background */
+}
+
+.testimonialSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: flex-start;
+    background-color: #2b2b2b; /* Slightly lighter dark background */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.testimonial-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.testimonial-content {
+    max-width: calc(100% - 75px);
+}
+
+.testimonial-content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffc107; /* Yellow color for names */
+    margin: 0;
+}
+
+.testimonial-content .title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #e0e0e0;
+    margin: 5px 0;
+}
+
+.testimonial-content .date {
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+.testimonial-content .quote {
+    font-size: 14px;
+    font-style: italic;
+    color: #e0e0e0;
+}
+.testimonial-content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffc107; /* Yellow color for names */
+    margin: 0; /* Remove margin */
+}
+
+.testimonial-content .title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #e0e0e0;
+    margin: 2px 0; /* Reduce margin to decrease the gap */
+}
+
+.testimonial-content .date {
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+.testimonial-content .quote {
+    font-size: 14px;
+    font-style: italic;
+    color: #e0e0e0;
+}
+
+.section-5 {
+    padding: 40px 20px;
+    background-color: #1e1e1e; /* Black background */
+}
+
+.EducationContainer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ff5733; /* Orange-red color for title */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; /* Increased margin for more space between items */
+    border-bottom: 1px solid #444444; /* Darker border */
+    padding-bottom: 30px; /* More padding for a larger item appearance */
+}
+
+.education-logo {
+    width: 80px; /* Increased logo size */
+    height: 80px; /* Increased logo size */
+    margin-right: 30px; /* More space between logo and content */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff5733; /* Thicker border to match the title color */
+}
+
+.education-content h4 {
+    font-size: 26px; /* Larger font size for university names */
+    font-weight: 600;
+    color: #ffc107; /* Yellow color for university names */
+    margin: 0;
+}
+
+.education-content p {
+    margin: 8px 0; /* Increased margin for better spacing */
+    font-size: 18px; /* Larger font size for descriptions */
+    color: #e0e0e0; /* Light gray text */
+}
+
+.education-content .date {
+    font-size: 16px; /* Larger font size for dates */
+    color: #999999; /* Slightly lighter gray for dates */
+}
+
+.section-6 {
+    padding: 40px 20px;
+    background-color: #1a1a1a; /* Match the dark background */
+    color: #e0e0e0; /* Light gray text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ContactContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.HeaderFeature {
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #ff5733; /* Orange-red color */
+    margin-bottom: 10px;
+}
+
+.subheader {
+    font-size: 18px;
+    color: #999999;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 20px;
+    color: #ffc107; /* Yellow color */
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+  
+    font-size: 24px;
+    color: #e0e0e0;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff5733; /* Change color on hover */
+}
+
+.contact-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffc107; /* Yellow border to match the theme */
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%; /* Ensures it takes up the full width of the container */
+}
+@media (max-width: 750px) {
+  body {
+    font-size: 16px; /* Adjusting font size for smaller screens */
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+}
+
+.section-7 {
+  background-color: #1e1e1e; /* Dark background to match your color scheme */
+  padding: 50px;
+  text-align: center;
+   /* White border to divide sections */
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-description {
+  color: #e0e0e0; /* Light gray text */
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.project-item {
+  background-color: #2b2b2b; /* Slightly lighter dark background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  color: #ffc107; /* Soft yellow for titles */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-summary {
+  color: #e0e0e0; /* Light gray text */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project-item a {
+  
+  color: #ff5733; /* Fiery red-orange for links */
+  text-decoration: none;
+  margin-top:700px;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+.section-8 {
+    background-color: #1e1e1e; /* Dark background */
+    padding: 30px;
+    text-align: center;
+}
+
+.certificates-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Smaller grid items */
+    gap: 15px; /* Reduced gap between items */
+}
+
+.certificates-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: contain; /* Ensures the entire image is visible */
+}
+
+.certificates-grid img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+    color: #ff5733; /* Fiery red-orange for the title */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
