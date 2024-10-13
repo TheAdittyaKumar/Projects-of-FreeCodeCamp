@@ -1,0 +1,119 @@
+/* Reset default padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1C1F33; /* Dark Blue background */
+    color: #FFF; /* White text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  /* Main Container Styling */
+  .container {
+    background-color: #2A2D44; /* Slightly lighter dark blue */
+    border-radius: 8px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px; /* Limit width for better scaling */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 3px solid #FF3B3F; /* Red border for US theme */
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: white; /* Bright Red for header */
+    margin-bottom: 1rem;
+  }
+  
+  /* Input Field Styling */
+  #user-input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #3B9AE1; /* Blue border for input */
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    background-color: #F7F9FB; /* Light background for input */
+    color: #1C1F33; /* Dark text for readability */
+  }
+  
+  #user-input:focus {
+    border-color: #FF3B3F; /* Red focus border */
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 59, 63, 0.8); /* Red glow effect */
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
+    border: none;
+  }
+  
+  /* Check Button */
+  #check-btn {
+    background-color: #3B9AE1; /* Blue button */
+    color: white;
+  }
+  
+  #check-btn:hover {
+    background-color: #3369AD; /* Darker blue on hover */
+  }
+  
+  /* Clear Button */
+  #clear-btn {
+    background-color: #FF3B3F; /* Red button */
+    color: white;
+  }
+  
+  #clear-btn:hover {
+    background-color: #CC3236; /* Darker red on hover */
+  }
+  
+  /* Results Div Styling */
+  #results-div {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    color: #3B9AE1; /* Blue color for results */
+    font-weight: bold;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 600px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    #user-input, button {
+      font-size: 1rem;
+    }
+  
+    #results-div {
+      font-size: 1.1rem;
+    }
+  }
+  
