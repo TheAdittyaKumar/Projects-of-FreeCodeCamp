@@ -1,0 +1,110 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Define color variables */
+  :root {
+    --primary-bg: #1e1e2f;
+    --accent-color: #a594f9;
+    --secondary-bg: #2d2d3e;
+    --text-color: #e5d9f2;
+    --highlight: #cdc1ff;
+    --input-bg: #f5efff;
+    --btn-bg: #4a4a4a;
+    --btn-hover-bg: #f5efff;
+  }
+  
+  /* Basic styling for the body */
+  body {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    font-family: 'Tahoma', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Main container layout */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--secondary-bg);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Input field styling */
+  #cash {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    background-color: var(--input-bg);
+    color: var(--primary-bg);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  /* Styling for change due display area */
+  #change-due {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-bg);
+    border-radius: 10px;
+    color: var(--highlight);
+    border: 2px solid var(--accent-color);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Button styling */
+  #purchase-btn {
+    background-color: var(--highlight);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--primary-bg);
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    transition: 0.2s ease;
+  }
+  
+  /* Hover effect for the button */
+  #purchase-btn:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--primary-bg);
+    box-shadow: 0 0 10px var(--highlight);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .container {
+      padding: 1.5rem;
+    }
+  
+    #cash {
+      font-size: 1rem;
+    }
+  
+    #change-due {
+      font-size: 1rem;
+    }
+  
+    #purchase-btn {
+      font-size: 1rem;
+    }
+  }
+  
